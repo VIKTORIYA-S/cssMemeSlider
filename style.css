@@ -178,3 +178,46 @@ body {
     transform: translateX(-80%);
     transition: 1.5s;
 }
+
+ @media screen and (max-width: 1188px) {
+     .text {
+         font-size: 1.7rem;
+
+     }
+ }
+
+ @media screen and (max-width: 1090px) {
+     .text {
+         font-size: 1.5rem;
+
+     }
+ }
+
+ @media screen and (max-width: 960px) {
+     .block {
+         width: 100%;
+         margin: 1rem auto;
+         flex-direction: column-reverse;
+         align-items: center;
+         justify-content: center;
+     }
+
+     .active {
+         width: 50%;
+         justify-content: center;
+         margin: auto;
+     }
+
+     .text {
+         display: inline-block;
+         text-align: center;
+     }
+ }
+
+ @media screen and (max-width: 460px) {
+     .active {
+         width: 80%;
+     }
+ }
+
+ 
