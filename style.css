@@ -21,3 +21,75 @@ body {
 .slider__wrapper {
     max-width: 100%;
 }
+
+.input {
+    visibility: hidden;
+}
+
+.slides__container {
+    max-width: 70%;
+    max-height: 80vh;
+    margin: auto;
+    border: 0.5rem solid rgb(2, 47, 131);
+    border-radius: 5%;
+    overflow: hidden;
+}
+
+.ribbon {
+    display: flex;
+    width: 500%;
+    /* height: 60%; */
+}
+
+.image {
+    width: 70%;
+    transition: all 2s ease-in-out;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+
+.block {
+    display: flex;
+    width: 70%;
+    margin: 2% auto;
+}
+
+.title {
+    width: 70%;
+    overflow: hidden;
+}
+
+.controls {
+    width: 500%;
+    /* height: 100%; */
+    display: flex;
+    align-items: flex-start;
+}
+
+.text {
+    width: 100%;
+    transition: all 2s ease-in-out;
+    display: flex;
+    justify-content: flex-start;
+    align-self: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: rgb(3, 30, 87);
+    overflow: hidden;
+}
+
+.active {
+    width: 30%;
+    /* height: 4rem; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0.4rem;
+    /* text-align: center; */
+}
