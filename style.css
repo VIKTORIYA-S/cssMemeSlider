@@ -81,6 +81,7 @@ body {
     font-weight: 700;
     color: rgb(3, 30, 87);
     overflow: hidden;
+    padding-right: 1rem;
 }
 
 .active {
@@ -92,4 +93,88 @@ body {
     align-items: center;
     gap: 0.4rem;
     /* text-align: center; */
+}
+
+.circle {
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle:hover {
+    border: 0.1rem solid rgba(5, 91, 250);
+    background-color: rgb(120, 159, 230);
+    transition: 0.5s;
+}
+
+.circle:active {
+    background-color: rgba(5, 91, 250);
+    border: 0.1rem solid rgb(120, 159, 230);
+}
+
+.circle:checked {
+    background-color: cornflowerblue;
+    border: 0.1rem solid rgb(120, 159, 230);
+}
+
+.dot:active {
+    background-color: cornflowerblue;
+    border: 0.3rem solid rgb(4, 50, 136);
+}
+
+.dot {
+    width: 1.5rem;
+    height: 1.5rem;
+    background: rgb(2, 47, 131);
+    border-radius: 50%;
+}
+
+#switch-1:checked~.block .active .circle_1,
+#switch-2:checked~.block .active .circle_2,
+#switch-3:checked~.block .active .circle_3,
+#switch-4:checked~.block .active .circle_4,
+#switch-5:checked~.block .active .circle_5,
+#switch-1:checked~.block .active .dot_1:hover,
+#switch-2:checked~.block .active .dot_2:hover,
+#switch-3:checked~.block .active .dot_3:hover,
+#switch-4:checked~.block .active .dot_4:hover,
+#switch-5:checked~.block .active .dot_5:hover {
+    background-color: cornflowerblue;
+    border: 0.1rem solid rgb(2, 34, 93);
+}
+
+
+
+#switch-1:checked~.slides__container .ribbon,
+#switch-1:checked~.block .title .controls {
+    transform: translateX(0);
+    transition: 1.5s;
+}
+
+#switch-2:checked~.slides__container .ribbon,
+#switch-2:checked~.block .title .controls {
+    transform: translateX(-20%);
+    transition: 1.5s;
+}
+
+#switch-3:checked~.slides__container .ribbon,
+#switch-3:checked~.block .title .controls {
+    transform: translateX(-40%);
+    transition: 1.5s;
+}
+
+#switch-4:checked~.slides__container .ribbon,
+#switch-4:checked~.block .title .controls {
+    transform: translateX(-60%);
+    transition: 1.5s;
+}
+
+#switch-5:checked~.slides__container .ribbon,
+#switch-5:checked~.block .title .controls {
+    transform: translateX(-80%);
+    transition: 1.5s;
 }
