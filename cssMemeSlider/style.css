@@ -198,8 +198,9 @@ body {
          width: 100%;
          margin: 1rem auto;
          flex-direction: column-reverse;
-         align-items: center;
+         /* align-items: center; */
          justify-content: center;
+         padding-left: 1rem;
      }
 
      .active {
@@ -211,7 +212,8 @@ body {
 
      .text {
          display: inline-block;
-         text-align: center;
+         text-align: left;
+         padding-left: 1rem;
      }
  }
 
