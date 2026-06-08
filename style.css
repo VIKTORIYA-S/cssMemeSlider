@@ -206,6 +206,7 @@ body {
          width: 50%;
          justify-content: center;
          margin: auto;
+         margin-bottom: 1rem;
      }
 
      .text {
